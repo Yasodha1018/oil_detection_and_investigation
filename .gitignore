@@ -1,0 +1,70 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# ===== Environment Variables =====
+.env
+.env.local
+.env.*.local
+frontend/.env
+backend/.env
+
+# ===== Databases =====
+*.db
+*.sqlite
+*.sqlite3
+maritrace.db
+
+# ===== ML Models (too large for Git) =====
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.onnx
+
+# ===== Data (large) =====
+data/raw/
+data/train/
+data/val/
+data/test/
+!data/demo/**
+
+# ===== Node =====
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.vite/
+frontend/.vite/
+frontend/node_modules/.vite/
+npm-debug.log*
+
+# ===== Python cache =====
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Build =====
+dist/
+build/
+*.tsbuildinfo

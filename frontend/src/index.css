@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --color-bg: #EBE0DC;
+  --color-surface: #F5EDE9;
+  --color-card: #FFFFFF;
+  
+  /* Text */
+  --color-text: #1A3A5C;
+  --color-text-muted: #1A3A5C/70;
+  
+  /* Accent Blue (Cerulean) */
+  --color-primary: #1F90DF;
+  --color-primary-hover: #1879C4;
+  --color-primary-light: #E6F1FA;
+  --color-primary-border: #1F90DF/40;
+  
+  /* Misc */
+  --color-shadow: rgba(31, 144, 223, 0.10);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Scrollbar – matches new blue */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EBE0DC;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Glass/panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(31, 144, 223, 0.15);
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+/* Utility classes */
+.bg-app { background-color: var(--color-bg); }
+.text-primary { color: var(--color-primary); }
+.border-primary { border-color: var(--color-primary-border); }
+.hover\:bg-primary:hover { background-color: var(--color-primary-hover); }
