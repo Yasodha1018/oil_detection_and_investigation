@@ -1,0 +1,15 @@
+# backend/render.yaml
+services:
+  - type: web
+    name: maritrace-backend
+    runtime: python
+    plan: free
+    region: oregon # Choose a region close to you, e.g., singapore
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: LIVE_MODE
+        value: false # Set to true if you have API keys configured in Render
